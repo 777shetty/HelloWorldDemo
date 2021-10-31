@@ -14,7 +14,7 @@ public class HelloRestController {
 		return "Hello from BridgeLabz";
 	}
 	@RequestMapping(value= {"/query"},method = RequestMethod.GET)
-	public String sayHello(@RequestParam(value="name")String name) {
-		return "Hello " +name+ "i";
+	public String sayHello(@RequestParam(value="fName")String fName,@RequestParam(value="lName")String lName) {
+		return "Hello " +fName+ " " +lName+ "i";
 	}
 } 
